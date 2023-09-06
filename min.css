@@ -137,7 +137,7 @@ body {
     margin: 0 auto;
     margin-bottom: 50px;
     border-radius: 5px;
- 
+
 }
 
 .product-item {
@@ -171,7 +171,13 @@ body {
     color: white;
     font-size: 17px;
     cursor: pointer;
+    transition: .4s;
 }
+
+.product-item button:hover {
+    background-color: #049451;
+}
+
 
 .botton {
     width: 100%;
@@ -193,14 +199,14 @@ body {
     font-size: 17px;
     font-family: sans-serif;
     color: #b09c00;
-    
+
 }
 
 .dis {
     font-size: 16px;
     font-family: sans-serif;
     padding-top: 15px;
-    color: #00743e;
+    color: #585858;
 }
 
 .xarid {
@@ -213,6 +219,32 @@ body {
 .xarid img {
     width: 60px;
     height: 60px;
+}
+
+
+.svg {
+    position: absolute;
+    right: 20px;
+    outline: none;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.svg1 {
+    position: absolute;
+    right: 35px;
+    outline: none;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    top: 65px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 2;
 }
 
 @media screen and (max-width:1480px) {
@@ -273,9 +305,10 @@ body {
     }
 
 }
+
 @media screen and (max-width:636px) {
 
-    .modal-itme{
+    .modal-itme {
         width: 90%;
     }
 
@@ -292,9 +325,10 @@ body {
         margin-top: 50px;
         border-radius: 10px;
         text-align: center;
-    
+
     }
-    .modal-itme{
+
+    .modal-itme {
         width: 90%;
     }
 
@@ -308,6 +342,7 @@ body {
     }
 
 }
+
 @media screen and (max-width:440px) {
 
     .ul {
@@ -318,19 +353,7 @@ body {
         font-size: 17px;
         font-family: sans-serif;
         color: #b09c00;
-        
+
     }
 
-}
-
-.svg{
-    position: absolute;
-    right: 20px;
-    outline: none;
-    border: 0;
-    width: 40px;
-    height: 40px;
-    top: 20px;
-    border-radius: 8px;
-   cursor: pointer;
 }
