@@ -13,15 +13,15 @@ let cart = [];
 
 // Ko'rinish modal oynasi
 async function openModal(imageUrl, title, brand, price, description) {
-  modalContent.innerHTML = ` <button class="svg" onclick="ok()">
+  modalContent.innerHTML = ` 
+  <button class="svg" onclick="ok()">
   <svg
     width="24"
     height="24"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
     data-test-id="button__close-sidebar"
-    class="close"
-  >
+    class="close">
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
@@ -59,13 +59,10 @@ async function getProducts(filterType, filterValue) {
       product.images.length > 0
     ) {
       const firstImage = product.images[0];
-      ui += `<div class="product-item"  onclick="openModal('${firstImage}', '${product.title}', '${product.brand}'
-              , '${product.price}' , '${product.description}')"> 
-                          <img src="${firstImage}" alt="${product.title}">
-                          <p>${product.title}</p>
-                          <button class="add-to-cart">Savatga qo'shish  </button>
-                          
-                      </div>`;
+      ui += `
+      <div class="product-item"  onclick="openModal('${firstImage}', '${product.title}', '${product.brand}',
+      '${product.price}' , '${product.description}')">  <img src="${firstImage}" alt="${product.title}">
+      <p>${product.title}</p> <button class="add-to-cart">Savatga qo'shish  </button>  </div>`;
     }
   }
 
