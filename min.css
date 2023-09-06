@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cart {
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#cart-count {
+    color: #DEC924;
+}
+
+#cart-button {
+    background-color: #003088;
+}
+
+.btn {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn button {
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border: 0;
+    background-color: #805AD5;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 17px;
+    border-radius: 6px;
+    transition: .4s;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+
+.btn button:hover {
+    transform: scale(1.1);
+
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-xarid {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.modal-itme {
+    background-color: #fff;
+    width: 600px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+/* Modalning ichki qismi */
+.modal-content {
+    background-color: #fff;
+    width: 500px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.modal-content img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+}
+
+.wrap1 {
+    background-color: #805AD5;
+    width: 1450px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+
+}
+
+.wrap {
+    background-color: #805AD5;
+    width: 1450px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+.product-item {
+    width: 340px;
+    margin-top: 50px;
+    background-color: #E0E0E0;
+    height: 400px;
+    display: grid;
+    text-align: center;
+    color: #805AD5;
+    font-family: sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+
+}
+
+.product-item img {
+    width: 100%;
+    object-fit: contain;
+    height: 300px;
+}
+
+.product-item button {
+    width: 90%;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    background-color: #4FC08C;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.botton {
+    width: 100%;
+    height: 10px;
+}
+
+.botton1 {
+    width: 100%;
+    height: 50px;
+    background-color: #4FC08C;
+    margin-bottom: -100px;
+}
+
+.ul {
+    display: flex;
+    width: 65%;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-size: 17px;
+    font-family: sans-serif;
+    color: #b09c00;
+}
+
+.dis {
+    font-size: 16px;
+    font-family: sans-serif;
+    padding-top: 15px;
+    color: #00743e;
+}
+
+.xarid {
+    width: 150px;
+    height: 60px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.xarid img {
+    width: 60px;
+    height: 60px;
+}
+
+@media screen and (max-width:1480px) {
+    .wrap {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        border-radius: 5px;
+    }
+
+    .wrap1 {
+        background-color: #805AD5;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 5px;
+
+    }
+}
+
+@media screen and (max-width:1100px) {
+
+    .btn {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:930px) {
+
+    .btn {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media screen and (max-width:877px) {
+
+    .cart {
+        margin-top: 20px;
+    }
+
+
+}
+
+
+@media screen and (max-width:667px) {
+
+
+    .gg {
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width:499px) {
+    .el {
+        margin-top: 20px;
+    }
+
+}

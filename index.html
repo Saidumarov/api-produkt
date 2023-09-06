@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Modal</title>
+    <link rel="stylesheet" href="./min.css" />
+  </head>
+  <body>
+    <div class="btn" id="buttons">
+      <button onclick="getProducts('all')" class="ha">Hammasi</button>
+      <button onclick="getProducts('category', 'groceries')">Oziq-ovqat</button>
+      <button onclick="getProducts('category','smartphones')" class="el">
+        Elektronika
+      </button>
+      <button onclick="getProducts('category', 'skincare')" class="gg">Go'zallik</button>
+      <div class="cart" id="cart">
+        <button id="cart-button">
+          <span id="cart-count">0</span> Savatga o'tish
+        </button>
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+    <div class="modal-xarid">
+      <div class="modal-itme"></div>
+    </div>
+    <div class="wrap">
+      <div class="wrap1" id="product-list"></div>
+      <div class="botton"></div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
