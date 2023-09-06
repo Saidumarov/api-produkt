@@ -22,7 +22,7 @@ fetch("https://dummyjson.com/products")
   .then(console.log);
 
 let div = document.querySelector("#product-list");
-let modal = document.querySelector("#modal");
+let modal = document.querySelector("#modal ");
 let modal1 = document.querySelector(".modal-xarid");
 let modalContent = document.querySelector("#modal-content");
 let modalContent1 = document.querySelector(".modal-itme");
@@ -35,8 +35,26 @@ let data;
 let cart = [];
 
 async function openModal(imageUrl, title, brand, price, description) {
-  modalContent.innerHTML = `<img src="${imageUrl}" alt="${title}">
-     <div class="ul"> <p>${title}</p> <p>Brand:${brand}</p> <p>Narx:${price}$ </p></div> <p class="dis">${description}</p>`;
+  modalContent.innerHTML = `  
+     <button class="svg" onclick="ok()">
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    data-test-id="button__close-sidebar"
+    class="close"
+  >
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M6.28033 5.21967C5.98744 4.92678 5.51256 4.92678 5.21967 5.21967C4.92678 5.51256 4.92678 5.98744 5.21967 6.28033L10.9393 12L5.21967 17.7197C4.92678 18.0126 4.92678 18.4874 5.21967 18.7803C5.51256 19.0732 5.98744 19.0732 6.28033 18.7803L12 13.0607L17.7197 18.7803C18.0126 19.0732 18.4874 19.0732 18.7803 18.7803C19.0732 18.4874 19.0732 18.0126 18.7803 17.7197L13.0607 12L18.7803 6.28033C19.0732 5.98744 19.0732 5.51256 18.7803 5.21967C18.4874 4.92678 18.0126 4.92678 17.7197 5.21967L12 10.9393L6.28033 5.21967Z"
+    ></path>
+  </svg>
+</button>  <img src="${imageUrl}" alt="${title}">
+     <div class="ul"> <p>${title}</p> <p>Brand:${brand}</p> <p>Narx:${price}$ </p></div> <p class="dis">${description}</p>
+     
+     `;
   modal.style.display = "block";
 }
 
@@ -90,6 +108,13 @@ modal1.addEventListener("click", function (e) {
     modal1.style.display = "none";
   }
 });
+
+function ok() {
+  modal.style.display = "none"
+  modal1.style.display = "none"
+
+}
+
 
 // "Savatga o'tish" tugmasini bosganda savat ro'yxatini chiqarish
 const cartButton = document.querySelector("#cart-button");

@@ -106,6 +106,7 @@ body {
     margin-top: 60px;
     border-radius: 10px;
     text-align: center;
+    position: relative;
 
 }
 
@@ -127,6 +128,7 @@ body {
     margin-bottom: 50px;
     border-radius: 5px;
 
+
 }
 
 .wrap {
@@ -135,6 +137,7 @@ body {
     margin: 0 auto;
     margin-bottom: 50px;
     border-radius: 5px;
+ 
 }
 
 .product-item {
@@ -270,6 +273,15 @@ body {
     }
 
 }
+@media screen and (max-width:636px) {
+
+    .modal-itme{
+        width: 90%;
+    }
+
+
+}
+
 @media screen and (max-width:540px) {
 
     .modal-content {
@@ -281,6 +293,9 @@ body {
         border-radius: 10px;
         text-align: center;
     
+    }
+    .modal-itme{
+        width: 90%;
     }
 
 
@@ -306,4 +321,16 @@ body {
         
     }
 
+}
+
+.svg{
+    position: absolute;
+    right: 20px;
+    outline: none;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    border-radius: 8px;
+   cursor: pointer;
 }
