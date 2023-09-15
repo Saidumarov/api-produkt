@@ -61,7 +61,7 @@ async function getProducts(filterType, filterValue) {
       const firstImage = product.images[0];
       ui += `
       <div class="product-item"  onclick="openModal('${firstImage}', '${product.title}', '${product.brand}',
-      '${product.price}' , '${product.description}')">  <img src="${firstImage}" alt="${product.title}">
+      '${product.price}' ,, '${product.description}')">  <img src="${firstImage}" alt="${product.title}">
       <p>${product.title}</p> <button class="add-to-cart">Savatga qo'shish  </button>  </div>`;
     }
   }
